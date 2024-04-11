@@ -1,0 +1,5 @@
+$schema: "1.0"
+name: DevBox-Workload
+tasks:
+  - name: accessibility-tools
+    description: Install Accessibility Tools
