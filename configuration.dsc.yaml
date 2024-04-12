@@ -28,18 +28,6 @@ properties:
       settings:
         Ensure: Present
 
-    ### Install: NVAccess.NVDA
-    ### -------------------------------------
-    - resource: Microsoft.WinGet.DSC/WinGetPackage
-      id: NVDA
-      directives:
-        description: Install NVAccess.NVDA
-        allowPrerelease: true
-      settings:
-        id: NVAccess.NVDA
-        source: winget
-        ensure: Present
-
     ### Install: Freedom Scientific JAWS 2023
     ### -------------------------------------
     - resource: Microsoft.WinGet.DSC/WinGetPackage
@@ -49,6 +37,18 @@ properties:
         allowPrerelease: true
       settings:
         id: FreedomScientific.JAWS.2023
+        source: winget
+        ensure: Present
+
+    ### Install: NVAccess.NVDA
+    ### -------------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: NVDA
+      directives:
+        description: Install NVAccess.NVDA
+        allowPrerelease: true
+      settings:
+        id: NVAccess.NVDA
         source: winget
         ensure: Present
 
