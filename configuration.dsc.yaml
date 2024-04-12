@@ -51,5 +51,16 @@ properties:
         id: NVAccess.NVDA
         source: winget
         ensure: Present
-
+    
+    ### Install: NotePad++
+    ### -------------------------------------
+    - resource: Microsoft.WinGet.DSC/WinGetPackage
+      id: Notepad++
+      directives:
+        description: Install Notepad++
+        allowPrerelease: true
+      settings:
+        id: Notepad++.Notepad++
+        source: winget
+        ensure: Present
   configurationVersion: 0.2.0
